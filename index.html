@@ -1,0 +1,236 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>safeDM</title>
+  <meta name="description" content="safeDM">
+  <meta name="author" content="Kelsey Bressler">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  background-color: transparent;
+}
+
+html {
+  height: 100%;
+  background-image: linear-gradient(#0F292F, #501F3A);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 45px;
+  color: #CCCCCC;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+}
+
+h2 {
+  color: #CCCCCC;
+  text-align: center;
+  font-family: 'Grand Hotel', cursive;
+}
+
+p {
+  color: #CCCCCC;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 24px;
+}
+
+.infobox {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top {
+  height: 50px;
+}
+.navbar-custom {
+  background-color: #cccccc;
+  border-color: #bbbbbb;
+}
+.navbar-custom .navbar-brand {
+  color: #501f3a;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #2b111f;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #501f3a;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #bbbbbb;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #501f3a;
+  border-left: 1px solid #bbbbbb;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #0f292f;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #0f292f;
+  background-color: #bbbbbb;
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #bababa;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #0f292f;
+  border-bottom-color: #0f292f;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #bbbbbb;
+  color: #0f292f;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #0f292f;
+  border-bottom-color: #0f292f;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #501f3a;
+  border-bottom-color: #501f3a;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #501f3a;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #0f292f;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #0f292f;
+    background-color: #bbbbbb;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #501f3a;
+}
+.navbar-custom .navbar-link:hover {
+  color: #0f292f;
+}
+  
+</style>
+
+</head>
+<div >
+  <nav class="navbar navbar-expand-lg navbar-custom ">
+  <a class="navbar-brand" href="#">safeDM</a>
+  <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/showYoDiq" target=”_blank”>Social Media</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/press">Press</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://mailchi.mp/394f8d63e866/safedm" target=”_blank” tabindex="-1" aria-disabled="true">Sign Up for our Mailing List</a>
+      </li>
+    </ul>   
+  </div>
+</nav>
+</div>
+  
+<body>
+
+<div class="top">
+</div>
+
+<div>
+  <h1>safeDM</h1>
+  <h2>making the internet safer</h2>
+</div>
+<hr color="#CB2D6F" size="6" width="65%">
+<br>
+<div class="infobox">
+  <img src="assets/NOEGGPLANTS.PNG" style="max-width:90%">
+  <br>
+  <br>
+  <h2 style="text-align: left"> What is safeDM? </h2>
+  <p>SafeDM is a new content-blocking filter designed to make the internet safer for all. It protects the user from viewing sensitive content, such as unsolicited nude photos, without their consent.</p>
+  <br>
+
+<br>
+<br>
+  <h2 style="text-align: left"> Why safeDM? </h2>
+  <p>Because everyone should be able to participate in the conversation without fear of sexual harassment. <a href="https://today.yougov.com/topics/lifestyle/articles-reports/2017/10/09/53-millennial-women-have-received-dick-pic">78% of millenial women report having been a victim of cyberflashing</a>. SafeDM targets these types of messages and deletes them automatically.</p>
+  <br>
+  <h2 style="text-align: left"> Can I Use it? </h2>
+  <p>Not yet- but soon! Keep in touch with us for updates on development and testing.
+  </p>
+  <br>
+  <h2 style="text-align: left"> Testing Participants </h2>
+  <p>Occasionally, we will anounce that we are testing our filter on Twitter. Yes, this means we are asking for D pics (for science).
+    <br> <b>By participating in our testing you are indicating that you are 18 or over and that the photo is being shared consensually</b>.
+  </p>
+  <br>
+  <h2 style="text-align: left"> A Note on Privacy </h2>
+  <p>We care very much about the privacy of our testing participants. For this reason, the photos you send to us are deleted.  Users will receive confirmation from the system when their photo is deleted. The only reason we may retain your photo for further testing is if the photo makes it past our filter. In this scenario, your photo remains in the DMs on our testing devices. Our devices have passcodes enabled and the test account has 2FA turned on. We try to let all users know when this happens but it is not always possible. If you do not receive confirmation, then your photo was not deleted. We retain information, such as the tags associated with your photo (nudity, sexual activity, etc.) but the data is anonymized. Please be aware that although we delete your photo, any messages and photos you send on Twitter are still saved by Twitter. This is the case for all of your conversations on Twitter, not just with safeDM.
+    <br> We suggest all testing participants refrain from including their face in the photos that they send in. If you are having second thoughts about participating in our testing, <b>please don't</b>. Our number one concern is your safety and wellbeing. </p>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
